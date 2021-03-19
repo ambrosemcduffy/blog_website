@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Retro Blog </title>
+		<meta charset="utf-8"/>
+		<meta content="initial-scale=1 maximum-scale=1 width=device-width"/>
+		<style>
+			.container {
+				border: 2px solid red;
+				display: grid;
+				background:white;
+				color: rgb(0, 0, 0);
+				grid-template-columns: 360px 360px 360px;
+				grid-template-rows: 50px 150px 950px;
+				margin: auto;
+				margin-top: 150;
+				grid-gap: 20px;
+				grid-template-areas: 
+				"hd hd"
+				"lg lg"
+				"ct ct"
+				"sb sb"
+				"ft ft";
+			}
+			.box {
+				font-size: 16px;
+				font-family: Opera;
+				justify-content: center;
+			}
+			.header {
+				border: 1px solid rgb(13, 0, 255);
+				grid-area: hd;
+				color: white;
+				text-align: center;
+				display: flex;
+				justify-content: ce;
+				grid-gap: 80px;
+				background-color: rgb(30, 30, 30);
+			}
+			.logo {
+				border: 1px solid rgb(21, 0, 255);
+				grid-area: lg;
+				display:flex;
+
+			}
+			.sidebar {
+				border: 1px solid rgb(0, 0, 255);
+				grid-area: sb;
+				text-align: center;
+
+			}
+			.content {
+				border: 1px solid rgb(0, 30, 255);
+				grid-area: ct;
+				text-align: center;
+			}.footer {
+				border: 1px solid rgb(43, 0, 255);
+				grid-area: ft;
+				display:flex;
+			}
+			#logo {
+				width:30px;
+			}
+			#sd_image {
+				width:250px;
+
+			}
+			hr {
+				width:170px;
+			}
+			#content_image {
+				width: 640px;
+			}
+			#footer_logo {
+				width:30px;
+
+			}
+			@media(min-width:800px){
+			.container {
+				border: 2px solid red;
+				display: grid;
+				background:white;
+				color: rgb(0, 0, 0);
+				grid-template-columns: 60px 960px 260px;
+				grid-template-rows: 30px 150px 950px;
+				margin: auto;
+				margin-top: 150;
+				grid-gap: 20px;
+				grid-template-areas: 
+				"hd hd hd hd hd"
+				"lg lg lg lg lg"
+				"ct ct ct sb sb"
+				"ft ft ft sb sb";
+			}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header box">
+			</div>
+			<div class="logo box">
+				<img src="logo.png"></img>
+			</div>
+			<div class="sidebar box">
+				<p>FOLLOW</p>
+				<hr>
+				<img id="logo" src="instagram_logo.png">
+				<img id="logo" src="twitter_logo.png">
+				<br>
+				<p>ABOUT ME</p>
+				<hr>
+				<img id="sd_image" src="riinu_side2.JPG">
+				<p> This  is a blog about me, and I like to talk aboout my journey...</p>
+				<br>
+				<p>INSTAGRAM</p>
+				<hr>
+				<img id="sd_image" src="collage.png">
+				<br>
+				<p>Recent Post</p>
+				<hr>
+				<h3><a href="blog_post.html"></a></h3>
+				<a href="blog_post.html">Link</a>
+			</div>
+			<div class="content box">
+				<h2>Work out favorites</h2>
+				<h1>A Workout for the Week on any Occasion</h1>
+				<img id="content_image" src="workoutRiinu.png">
+				<p> The start of a new journey is for the web..</p>
+				<p> I normally go out to do Jogging by day and for night I do a little more..</p>
+				<p> Originall from Estonia being in Australia allowed me to expand my bussiness.</p>
+
+			</div>
+
+			<div class="footer box">
+				<img id="footer_logo" src="instagram_logo.png">
+				<img id="footer_logo" src="twitter_logo.png">
+			</div>
+		</div>
+	</body>
+</html>

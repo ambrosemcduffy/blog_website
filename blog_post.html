@@ -1,0 +1,85 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <title>Blog</title>
+        <meta charset="UTF-8">
+        <meta content="width=device-width initial-scale=1.0  maximum-scale=1.0">
+        <style>
+            .container {
+                display:grid;
+                border: 2px solid red;
+                grid-template-columns: 360px 360px 360px;
+                grid-template-rows: 140px 540px 540px;
+                background-color: white;
+                color:black;
+                margin: auto;
+				margin-top: 150;
+				grid-gap: 10px;
+                grid-template-areas:
+                "hd hd hd hd hd"
+                "fe fe fe fe fe"
+                "ct ct ct ct ct"
+                "ft ft ft ft ft";
+            }
+            .box {
+				font-size: 16px;
+				font-family: Opera;
+				justify-content: center;
+			}
+            .header {
+                grid-area: hd;
+                border: 2px solid rgb(0, 0, 0);
+                justify-content: center;
+                text-align: center;
+
+            }
+            .feature{
+                grid-area: fe;
+                display: flex;
+                color: white;
+                justify-content: center;
+                border: 2px solid rgb(0, 0, 0);
+                background-image: url("img1\ \(1\).JPG");
+                background-size: contain;
+                background-repeat:no-repeat;
+                background-color: black;
+                background-position: center;
+            }
+            .content {
+                grid-area: ct;
+                border: 2px solid rgb(0, 0, 0);
+                text-align: center;
+            }
+            .footer {
+                grid-area: ft;
+                border: 2px solid rgb(0, 0, 0);
+                text-align: center;
+            }
+            hr {
+                width: 239px;
+            }
+        </style>
+    </head>
+    <div class="container">
+        <div class="header box">
+            <h1>Wonderful World of Riinu</h1>
+            <hr>
+            <h3>chapter one</h3>
+            
+        </div>
+        <div class="feature box">
+        </div>
+        <div class="content box">
+            <body>
+                <p>
+                    Things are super fun today in Thailand my day consisted of a lot of things to do.
+                </p>
+                <p> However food is whas really a problem for me some foods are not well cooked, and I got food poisioning.</p>
+                <p> Nevertheless, I had an amazing time on my Journey.</p>
+            </body>
+        </div>
+        <div class="footer box">
+            <a href="index.">Home</a>
+        </div>
+    </div>
+</html>
